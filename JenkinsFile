@@ -11,7 +11,7 @@ spec:
     command:
     - sleep
     args:
-    - 99
+    - 9999999
     volumeMounts:
       - name: jenkins-docker-cfg
         mountPath: /kaniko/.docker

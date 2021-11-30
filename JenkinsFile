@@ -39,4 +39,14 @@ spec:
       }
     }
   }
+    stage('Deploy on ' ) {
+            steps {
+                
+                sh '''
+                kubectl delete pod nginx -n default --kubeconfig /root/.kube/config
+                '''
+                
+                
+            }
+        }  
 }
